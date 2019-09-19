@@ -1,0 +1,386 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.8.0">
+    <title>Uppy</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Uppy">
+    <meta name="description" content="Uppy fetches files locally and from remote places like Dropbox or Instagram. With its seamless integration, reliability and ease of use, Uppy is truly your best friend in file uploading.
+">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@uppy_io">
+    <meta name="twitter:creator" content="@uppy_io">
+    <meta property="og:url" content="https://uppy.io/archives/index.html">
+    <meta property="og:title" content="Uppy">
+    <meta name="twitter:title" content="Uppy">
+    <meta name="twitter:description" content="Uppy fetches files locally and from remote places like Dropbox or Instagram. With its seamless integration, reliability and ease of use, Uppy is truly your best friend in file uploading.
+">
+    <meta property="og:image" content="http://uppy.io/images/uppy-social-pink.png">
+    <meta name="twitter:image" content="http://uppy.io/images/uppy-social-pink.png">
+    
+    <meta name="google-site-verification" content="JxARoHXoCI8bD07pLV_u3z6xpuWNcSIZIcHEytyCkUc">
+
+    <link rel="icon" href="/images/logos/uppy-dog-head-arrow.png" type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="Uppy" href="/atom.xml">
+
+    <script>
+      window.PAGE_TYPE = ""
+    </script>
+    <link rel="stylesheet" href="/css/main.css?version=2">
+    <!-- ^-- poor man's solution to css cache busting. bump the version when there's something new we really want users to see -->
+  </head>
+  <body class="page-inner ">
+    <div class="page">
+      <div class="TransloaditBar">
+        <a class="TransloaditBar-logo" href="https://transloadit.com/" target="_blank" rel="noopener noreferrer">
+          <img class="TransloaditBar-logoImg" src="/images/transloadit.svg" width="82" height="19" alt="Transloadit">
+        </a>
+        <div class="TransloaditBar-about">Uppy is an open source project by <a class="TransloaditBar-link" href="https://transloadit.com/" target="_blank">Transloadit</a></div>
+      </div>
+
+      <header id="header" class="MainHeader js-MainHeader">
+        <button class="MainHeader-menuBtn js-MenuBtn"></button>
+
+        <span id="logo" class="MainLogo">
+          <a class="MainLogo-link" href="/">Uppy</a>
+          <a class="MainLogo-version" href="/blog/2019/04/1.0/">
+            1.0
+            <span class="MainLogo-emoji">
+              <img src="/images/party-popper.png" srcset="/images/party-popper@2x.png 2x" alt="🎉">
+            </span>
+          </a>
+        </span>
+
+        <nav>
+          <ul id="nav" class="MainMenu">
+            <!-- @todo uncomment search input when we get our own swifttype -->
+<!-- <li>
+  <form id="search-form" class="MainMenu-search">
+    <input type="text" id="search-query" class="MainMenu-searchQuery st-default-search-input">
+  </form>
+</li> -->
+<!--li><a href="/guide/" class="nav-link">Guide</a></li-->
+<li><a href="/docs/" class="nav-link">Docs</a></li>
+<li><a href="/examples/dashboard/" class="nav-link">Examples</a></li>
+<!--li><a href="/stats/" class="nav-link">Stats</a></li-->
+<li><a href="/blog/" class="nav-link">Blog</a></li>
+<li><a href="/support/" class="nav-link">Support</a></li>
+<li><a href="https://github.com/transloadit/uppy" class="nav-link">GitHub</a></li>
+
+          </ul>
+        </nav>
+
+        <div class="MainHeader-tagline">
+          The file uploader that <span class="MainHeader-taglinePart js-MainHeader-taglinePart is-visible">loves to play fetch</span>
+        </div>
+
+        <ul class="MainHeader-taglineList js-MainHeader-taglineList">
+          
+          <li>won’t chew on your shoes</li>
+          
+          <li>is fully housebroken</li>
+          
+          <li>just wants to play with you</li>
+          
+          <li>doesn’t hump your leg</li>
+          
+          <li>also accepts cat pictures</li>
+          
+          <li>loves you unconditionally</li>
+          
+          <li>you don’t have to keep on a leash</li>
+          
+          <li>won’t pee on your rug</li>
+          
+          <li>loves to play fetch</li>
+          
+          <li>doesn’t bite (hard)</li>
+          
+          <li>won’t bark at the mailman</li>
+          
+          <li>is great with the kids</li>
+          
+          <li>can digest anything, even chocolate cake</li>
+          
+          <li>is always happy to see you</li>
+          
+          <li>isn’t afraid of fireworks</li>
+          
+          <li>is allowed everywhere</li>
+          
+        </ul>
+      </header>
+
+      <main class="MainContent js-MainContent" id="main">
+        
+          <section id="hero" class="IndexHero">
+  <img class="IndexHero-logo" title="Uppy" alt="Uppy" src="/images/logos/uppy-logo-2019.svg">
+  <h1 class="IndexHero-title">
+    Sleek, modular open source JavaScript file uploader
+  </h1>
+  <div class="IndexHero-description">
+    Uppy fetches files locally and from remote places like Dropbox or Instagram. With its seamless integration, reliability and ease of use, Uppy is truly your best friend in file uploading.
+
+  </div>
+  <div class="IndexHero-buttons">
+    <a href="/docs/" class="button button--cta">Get Started</a>
+    <a href="https://github.com/transloadit/uppy" class="button button--secondary">
+      Uppy on GitHub
+      <span class="GithubStars">★ 20981</span>
+    </a>
+  </div>
+</section>
+
+<section class="IndexDemo">
+  <div class="IndexDemo-tabContent">
+    <div class="TabPane TabPane--active" id="live-demo">
+      <div class="IndexDemo-uppyWrapper">
+        <div class="IndexDemo-uppy" id="demo"></div>
+      </div>
+    </div> <!-- /live-demo -->
+
+    <div class="TabPane" id="video">
+      <div class="IndexDemo-video">
+        <video autoplay loop muted playsinline>
+          <source src="/images/uppy-demo-oct-2018.mp4" type="video/mp4">
+          Your browser does not support the video tag, you can <a href="/images/uppy-demo-oct-2018.mp4">download the video</a>
+          to watch it.
+        </video>
+      </div>
+    </div> <!-- /video -->
+
+    <div class="TabPane" id="code">
+      <div class="IndexDemo-code">
+        <figure class="highlight bash"><table><tbody><tr><td class="code"><pre>$ <span class="token function">npm</span> <span class="token function">install</span> @uppy/core @uppy/dashboard @uppy/instagram @uppy/tus </pre></td></tr></tbody></table></figure>
+
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="token keyword">import</span> Uppy <span class="token keyword">from</span> <span class="token string">&apos;@uppy/core&apos;</span>
+<span class="token keyword">import</span> Dashboard <span class="token keyword">from</span> <span class="token string">&apos;@uppy/dashboard&apos;</span>
+<span class="token keyword">import</span> Instagram <span class="token keyword">from</span> <span class="token string">&apos;@uppy/instagram&apos;</span>
+<span class="token keyword">import</span> Tus <span class="token keyword">from</span> <span class="token string">&apos;@uppy/tus&apos;</span>
+
+<span class="token function">Uppy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Dashboard<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    trigger<span class="token punctuation">:</span> <span class="token string">&apos;#select-files&apos;</span><span class="token punctuation">,</span>
+    showProgressDetails<span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Instagram<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    target<span class="token punctuation">:</span> Dashboard<span class="token punctuation">,</span>
+    companionUrl<span class="token punctuation">:</span> <span class="token string">&apos;https://companion.uppy.io&apos;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Tus<span class="token punctuation">,</span> <span class="token punctuation">{</span> endpoint<span class="token punctuation">:</span> <span class="token string">&apos;https://master.tus.io/files/&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&apos;complete&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Upload result:&apos;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span></pre></td></tr></tbody></table></figure>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      </div>
+    </div> <!-- /code -->
+  </div>
+
+  <ul class="Tabs">
+    <li class="Tabs-item">
+      <a class="Tabs-link Tabs-link--active" href="#live-demo">
+        <span class="Tabs-icon">
+          <svg width="11" height="15" viewbox="0 0 11 15">
+            <path d="M0 0v12.5L3.667 9l3.143 6 2.619-1.5L5.762 8 11 7.5z" fill-rule="evenodd"/>
+          </svg>
+        </span>
+        Live demo
+      </a>
+    </li>
+    <li class="Tabs-item">
+      <a class="Tabs-link" href="#video">
+        <span class="Tabs-icon">
+          <svg width="19" height="19" viewbox="0 0 19 19">
+            <path d="M9.5 19a9.5 9.5 0 1 1 0-19 9.5 9.5 0 0 1 0 19zm0-2a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15zM14 9.5l-6.75 3.897V5.603L14 9.5z" fill-rule="nonzero"/>
+          </svg>
+        </span>
+        Video
+      </a>
+    </li>
+    <li class="Tabs-item">
+      <a class="Tabs-link" href="#code">
+        <span class="Tabs-icon">
+          <svg width="29" height="17" viewbox="0 0 29 17">
+            <path d="M8.45 5.748L2.402 8.484 8.45 11.22v2.16L.17 9.6V7.44l8.28-3.78v2.088zm11.34 5.544l6.048-2.736L19.79 5.82V3.66l8.28 3.78V9.6l-8.28 3.78v-2.088zm-9.7 5.308L15.85.4h2.16l-5.76 16.2h-2.16z" fill-rule="nonzero"/>
+          </svg>
+        </span>
+        Code
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="IndexFeatures">
+  <h2>Features</h2>
+  <ul class="IndexFeatures-list">
+    <li><strong>Lightweight</strong> and modular, plugin-based architecture, easy on dependencies <img width="16" align="absmiddle" src="/images/emojis/zap.png"></li>
+    <li>Large uploads survive network hiccups thanks to <strong>resumable file uploads</strong> via the open <strong><a href="https://tus.io/">tus</a></strong> standard</li>
+    <li><img width="16" align="absmiddle" src="/images/emojis/battery.png"> Saves battery and data plan by letting users pick files from <strong>Webcam, Dropbox, Google Drive and Instagram</strong>, while letting servers do the heavy lifting via <strong><a href="/docs/companion/">Companion</a></strong></li>
+    <li>Works great with the file encoding and processing backend from <strong><a href="https://transloadit.com/">Transloadit</a></strong>, but also works great without <img width="16" align="absmiddle" src="/images/emojis/transloadit.png"></li>
+    <li><strong>Open source and driven by the community</strong> We listen closely and adjust the project based on your feedback <img width="16" align="absmiddle" src="/images/emojis/heart.png"></li>
+    <li><strong>Sleek user interface <img width="16" align="absmiddle" src="/images/emojis/sparkles.png"></strong></li>
+    <li>File recovery (after a browser crash or accidental navigation) via <strong><a href="/docs/golden-retriever/">Golden Retriever</a></strong></li>
+    <li>Speaks <strong><a href="/docs/locales/#List-of-locale-packs">multiple languages</a></strong> (i18n) <img width="16" align="absmiddle" src="/images/emojis/earth_africa.png"></li>
+    <li>Built with accessibility in mind</li>
+    <li><strong>Free to the world, forever</strong></li>
+    <li>Cute as a puppy, also accepts cat pictures <img width="16" align="absmiddle" src="/images/emojis/dog.png"></li>
+  </ul>
+</section>
+
+<section class="IndexReviews">
+  <ul class="IndexReviews-list">
+    <li class="IndexReviews-item">
+      <a class="IndexReviews-link" href="https://books.producthunt.com/bestof2017" target="_blank" rel="noreferrer noopener">
+        <div class="IndexReviews-imgWrapper">
+          <img class="IndexReviews-img" src="/images/testimonials/producthunt.png" srcset="/images/testimonials/producthunt@2x.png 2x" alt="Product Hunt">
+        </div>
+        The Best Product Launches
+      </a>
+    </li>
+
+    <li class="IndexReviews-item">
+      <a class="IndexReviews-link" href="https://stackshare.io/posts/top-developer-tools-2017" target="_blank" rel="noreferrer noopener">
+        <div class="IndexReviews-imgWrapper">
+          <img class="IndexReviews-img" src="/images/testimonials/stackshare.png" srcset="/images/testimonials/stackshare@2x.png 2x" alt="StackShare">
+        </div>
+        Top 10 tools of the year
+      </a>
+    </li>
+
+    <li class="IndexReviews-item">
+      <a class="IndexReviews-link" href="https://twitter.com/smashingmag/status/1097870169043546112?lang=ca" target="_blank" rel="noreferrer noopener">
+        <div class="IndexReviews-imgWrapper">
+          <img class="IndexReviews-img" src="/images/testimonials/smashing-magazine.png" srcset="/images/testimonials/smashing-magazine@2x.png 2x" alt="Smashing Magazine">
+        </div>
+        “Soooo useful”
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="IndexActivity">
+  <h2>Activity Feed</h2>
+
+  <div class="on-the-githubs" data-event-source="repos/transloadit/uppy">Loading...</div>
+</section>
+
+<section>
+  <ul class="Social">
+  <li><a href="https://twitter.com/uppy_io" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @uppy_io</a></li>
+  <li><iframe src="https://ghbtns.com/github-btn.html?user=transloadit&repo=uppy&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
+  <!-- to regenerate you can use this link: https://img.shields.io/badge/community-forum-d8006a.svg -->
+  <li><a href="https://community.transloadit.com/c/uppy"><img src="/images/community-forum-d8006a.svg"> </a></li>
+  <li class="BuildBadge">
+   <span class="wrapper">
+     <a href="https://travis-ci.org/transloadit/uppy"><img src="https://travis-ci.org/transloadit/uppy.svg?branch=master" alt="Build Status"></a>
+   </span>
+  </li>
+  <li class="SauceBadge">
+   <span class="wrapper">
+     <a href="https://saucelabs.com/u/transloadit-uppy">
+       <img src="https://saucelabs.com/buildstatus/transloadit-uppy" alt="Sauce Test Status">
+     </a>
+   </span>
+  </li>
+</ul>
+
+</section>
+
+<footer class="IndexFooter">
+  <p><img class="IndexFooter-logo" title="Uppy" alt="Uppy" src="/images/logos/uppy-logo-2019.svg"></p>
+  <p>Released under the <a href="http://opensource.org/licenses/MIT" rel="noreferrer noopener" target="_blank">MIT License</a> ⋅ <a href="/privacy-policy/">Privacy Policy</a></p>
+  <p>© 2019 <a href="https://transloadit.com" target="_blank">Transloadit</a></p>
+</footer>
+
+<link href="https://transloadit.edgly.net/releases/uppy/v1.4.0/uppy.min.css" rel="stylesheet">
+<script src="https://transloadit.edgly.net/releases/uppy/v1.4.0/uppy.min.js"></script>
+
+<script>
+  var TUS_ENDPOINT = 'https://master.tus.io/files/'
+  var COMPANION_ENDPOINT = 'http://localhost:3020'
+  if (location.hostname === 'uppy.io') {
+    COMPANION_ENDPOINT = '//companion.uppy.io'
+  }
+
+  var uppy = Uppy.Core({ debug: true })
+    .use(Uppy.Dashboard, {
+      target: '#demo',
+      inline: true,
+      replaceTargetContent: true,
+      metaFields: [
+        { id: 'license', name: 'License', placeholder: 'specify license' },
+        { id: 'caption', name: 'Caption', placeholder: 'describe what the image is about' }
+      ]
+    })
+    .use(Uppy.GoogleDrive, { target: Uppy.Dashboard, companionUrl: COMPANION_ENDPOINT })
+    .use(Uppy.Instagram, { target: Uppy.Dashboard, companionUrl: COMPANION_ENDPOINT })
+    .use(Uppy.Dropbox, { target: Uppy.Dashboard, companionUrl: COMPANION_ENDPOINT })
+    .use(Uppy.Webcam, { target: Uppy.Dashboard })
+    .use(Uppy.Url, { target: Uppy.Dashboard, companionUrl: COMPANION_ENDPOINT })
+    .use(Uppy.Tus, { endpoint: TUS_ENDPOINT})
+
+  uppy.on('success', function (files) {
+    console.log('Upload complete! We’ve uploaded these files:', files)
+  })
+</script>
+
+        
+      </main>
+
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63083-12', 'uppy.io');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+
+
+      
+        <script src="/js/smooth-scroll.min.js"></script>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+      
+      <script src="/js/common.js"></script>
+
+      <!-- Twitter follow button script -->
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      <!--script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+      <script>
+        WebFont.load({
+          google: {
+            families: ['Source Sans Pro:400,600', 'Roboto Mono', 'Poiret One:400']
+          }
+        });
+      </script-->
+    </div>
+  </body>
+</html>
